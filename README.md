@@ -7,7 +7,7 @@
 
   Looking to collaborate on projects that require serious work... but also a generous amount of procrastination, snack breaks, and occasional anime binges. 🍿🎥
 
-  How to reach me: Send a carrier pigeon. I check email only when I’m avoiding actual work. (I’m just one email away from a caffeine-fueled all-nighter!) 🕊️📧
+  How to reach me: Send a carrier pigeon. I check email only when I’m avoiding actual work. 🕊️📧
 
   Pronouns: He/Him (But I also respond to “Hey, you!” and “The Bug Slayer!”) 😄
 
