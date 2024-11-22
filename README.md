@@ -9,7 +9,7 @@
 
   How to reach me: Send a carrier pigeon. I check email only when I’m avoiding actual work. 🕊️📧
 
-  Pronouns: He/Him (But I also respond to “Hey, you!” and “The Bug Slayer!”) 😄
+  Pronouns: He/Him (But I also respond to “Hey, you!”) 😄
 
 
 
