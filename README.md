@@ -19,10 +19,14 @@ Send a carrier pigeon. I check email only when Mercury isn’t in retrograde. �
 
 ---
 
-## 🛠️ Skills, Tools & Tech
+🛠️ **Skills, Tools & Tech**
 
-- **Languages:** Python, C, Bash, Markdown  
-- **Tools & Platforms:** Linux, NetSim, GNU Radio, Git, deep Googling
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white)
+![NetSim](https://img.shields.io/badge/-NetSim-grey?style=flat&logo=matrix&logoColor=white)
+![GNU Radio](https://img.shields.io/badge/-GNU%20Radio-orange?style=flat&logo=gnuradio&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![IoT](https://img.shields.io/badge/-IoT-blue?style=flat&logo=raspberrypi&logoColor=white)
 
 ---
 
