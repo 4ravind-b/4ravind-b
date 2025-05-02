@@ -14,7 +14,7 @@ Passionate about exploring **IoT, AI**, and **cybersecurity** — especially whe
 Currently trying to master the art of juggling multiple projects... and failing spectacularly. (Coffee cups, phones, and dignity — all dropped at some point.) ☕📱💥
 
 ### 📨 How to reach me  
-Send a carrier pigeon. I check email only when Mercury isn’t in retrograde. 🕊️📧  
+Send a carrier pigeon. I check email only when my Wi-Fi signal is strong and my caffeine level is critical.. 🕊️📧  
 **Pronouns:** He/Him (but I also respond to “Dude,” “Bro,” or “HEY YOU WITH THE BUGGY CODE”) 😄
 
 ---
