@@ -86,3 +86,9 @@ I’m currently working on a **super-secret AI project**. No, it’s not as myst
 ---
 
 ## 👋 Thanks for stopping by!
+
+---
+
+<!-- 🔄 Typing Animation That Sums Me Up -->
+![typing](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00F8FF&center=true&vCenter=true&width=600&lines=Code%2C+break%2C+debug%2C+repeat...;Searching+StackOverflow+like+a+pro...;Currently+googling+%22python+why%22...;99%25+sure+it+was+working+before...;Deploying+chaos+to+production...;Coding+with+vibes+not+logic...)
+
