@@ -21,12 +21,14 @@ Send a carrier pigeon. I check email only when Mercury isn’t in retrograde. �
 
 🛠️ **Skills, Tools & Tech**
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white)
-![NetSim](https://img.shields.io/badge/-NetSim-grey?style=flat&logo=matrix&logoColor=white)
-![GNU Radio](https://img.shields.io/badge/-GNU%20Radio-orange?style=flat&logo=gnuradio&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![IoT](https://img.shields.io/badge/-IoT-blue?style=flat&logo=raspberrypi&logoColor=white)
+Here’s a list of my “I learned this... once” superpowers:
+
+- **Python 🐍**: Learned it in college, forgot the syntax, Googled it back into my brain.  
+- **C 💻**: Survived enough pointers to call it “expertise” (ish).  
+- **NetSim 🌐**: I can simulate networks… until a packet drops and I panic.  
+- **GNU Radio 📡**: Built flowgraphs that kind-of-sort-of work—most of the time.  
+- **Linux 🐧**: I know enough commands to feel dangerous in a terminal.  
+- **IoT 🔌**: My devices are “smart” enough to ignore me sometimes.  
 
 ---
 
@@ -36,6 +38,15 @@ Send a carrier pigeon. I check email only when Mercury isn’t in retrograde. �
   <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=tokyonight" width="49%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=tokyonight" width="49%" />
 </p>
+
+Here’s the **totally serious** breakdown of my coding life:
+
+- ☕ **Coffee Cups Consumed:** Approximately one per bug encountered (so… a lot).  
+- 🍪 **Snack Breaks Taken:** Enough to fuel a small army of procrastinators.  
+- 🐞 **Bugs Squashed:** Countless—each with its own dramatic backstory.  
+- 🌙 **Midnight Coding Hours:** When the rest of the world sleeps, my brain powers on.  
+
+*(Yes, these stats are real… I think.)*  
 
 ---
 
