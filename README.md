@@ -32,17 +32,15 @@ Pronouns: **He/Him** (But I also respond to “Hey, you!”) 😄
 
 📈 **GitHub Stats**
 
-![Aravind's GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=radical)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=radical)
-
-<!-- Replace YOUR_USERNAME with your GitHub username -->
+![Aravind's GitHub Stats](https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=radical)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=4ravind-b&theme=radical)
 
 ---
 
 🐍 **Contribution Snake**
 
-![Snake animation](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/4ravind-b/4ravind-b/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
