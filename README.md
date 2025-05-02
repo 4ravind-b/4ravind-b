@@ -1,84 +1,89 @@
-# 👋 Hey, I’m Aravind (a.k.a. “that guy who codes at 3 AM”)
-
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Welcome%20to%20my%20Profile!&fontSize=40)
 
----
-
-📝 **About Me**
-
-Passionate about exploring **IoT**, **AI**, **communication systems**, and a sprinkle of **cybersecurity**—but also deeply committed to snacking at 3 AM and calling it “research.” 🍪📚
-
-Currently learning how to juggle multiple projects… although I’m still trying to balance actual things like coffee cups and phones (spoiler: things often hit the floor). ☕📱
-
-Looking to collaborate on projects that require serious work... and also generous snack breaks, procrastination, and anime binges. 🍿🎥
-
-📨 How to reach me:  
-Send a carrier pigeon. I check email only when I’m avoiding real work. 🕊️📧
-
-Pronouns: **He/Him** (But I also respond to “Hey, you!”) 😄
+# 👋 Hey, I’m Aravind (a.k.a. “that guy who codes at 3 AM”)
 
 ---
 
-🛠️ **Skills, Tools & Tech**
+## 📝 About Me
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white)
-![NetSim](https://img.shields.io/badge/-NetSim-grey?style=flat&logo=matrix&logoColor=white)
-![GNU Radio](https://img.shields.io/badge/-GNU%20Radio-orange?style=flat&logo=gnuradio&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![IoT](https://img.shields.io/badge/-IoT-blue?style=flat&logo=raspberrypi&logoColor=white)
+I’m a Python-and-coffee-fueled creature of the night, occasionally seen pretending to be productive while actually Googling "why is my code not working." 🐍☕  
 
----
+Passionate about exploring **IoT, AI**, and **cybersecurity** — especially when it involves outsmarting things that were never smart to begin with.  
 
-📈 **GitHub Stats**
+Currently trying to master the art of juggling multiple projects... and failing spectacularly. (Coffee cups, phones, and dignity — all dropped at some point.) ☕📱💥
 
-![Aravind's GitHub Stats](https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=radical)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=4ravind-b&theme=radical)
+### 📨 How to reach me:
+Send a carrier pigeon. Or just email me when Mercury isn’t in retrograde. 🕊️📧
+
+**Pronouns**: He/Him (but I also respond to “Dude,” “Bro,” or “HEY YOU WITH THE BUGGY CODE”) 😄
 
 ---
 
-🐍 **Contribution Snake**
+## 🛠️ Skills, Tools & Tech
 
-![Snake animation](https://github.com/4ravind-b/4ravind-b/blob/output/github-contribution-grid-snake.svg)
-
----
-
-📚 **Currently Learning**
-
-- CUDA Programming (Because CPUs need a break too)
-- GNU Radio Advanced Projects
-- How not to burn toast at 2 AM
+**Languages**: Python, C, Bash, Markdown (because formatting is a lifestyle)  
+**Tools**: Linux, GNU Radio, NetSim, Git, and deep Googling
 
 ---
 
-🎯 **Goals for 2025**
+## 📚 Currently Learning
 
-- Build a weather station with Sense HAT
-- Dive deeper into embedded Linux for IoT
-- Submit fewer late-night Git commits
-
----
-
-🧪 **What I Contribute**
-
-Adding code, programs, and simulations from coursework... and some projects where I pretend to be a mad scientist 🧠⚙️.  
-Got a cool idea? Fork this repo and go wild — learning's better together! 🤝
+- CUDA programming (because my GPU was getting bored)  
+- TensorFlow/Keras stuff and pretending to understand it  
+- How to write documentation without crying  
+- How *not* to burn toast at 2 AM 🔥🍞  
+- Cybersecurity fun things that make me feel like a hacker (without going to jail)
 
 ---
 
-🎮 **Fun Zone**
+## 🎯 Goals for 2025
 
-![Coding Meme](https://media.giphy.com/media/3ohzdYJK1wAdPWVk88/giphy.gif)
-
----
-
-🛸 **Random Fact**
-
-I once debugged a whole project just to realize I hadn't saved the file. True story.
+- Finally automate my snack ordering with AI  
+- Build something cool and tell everyone “it’s just a prototype”  
+- Submit at least one project before the deadline (just once... please)  
+- Touch grass (no promises)
 
 ---
 
-👋 Thanks for stopping by!
+## 🧪 What I Contribute
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
+Uploading college projects, personal experiments, and random “aha!” moments that hit at 3 AM. Basically: I break things until they work. 🧪⚙️
+
+Got an idea? Fork it, break it, fix it — let’s build cool stuff together. 🤝
+
+---
+
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=tokyonight" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=tokyonight" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=4ravind-b&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" />
+</p>
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://github.com/4ravind-b/4ravind-b/blob/output/github-contribution-grid-snake.svg" />
+</p>
+
+---
+
+## 🎮 Fun Zone
+
+![Coding Meme](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
+
+---
+
+## 🛸 Random Fact
+
+I once debugged a project for 3 hours before realizing I hadn’t saved the file. A moment of silence, please. 😔💾
+
+---
+
+## 👋 Thanks for stopping by!
