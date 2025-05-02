@@ -33,10 +33,6 @@ Send a carrier pigeon. I check email only when Mercury isn’t in retrograde. �
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=tokyonight" width="49%" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.demolab.com?user=4ravind-b&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" />
-</p>
-
 ---
 
 ## 📚 Currently Learning
@@ -59,16 +55,17 @@ Send a carrier pigeon. I check email only when Mercury isn’t in retrograde. �
 
 ## 🧪 What I Contribute
 
-Uploading college projects, personal experiments, and random “aha!” moments that hit at 3 AM. Basically: I break things until they work. 🧪⚙️  
+Uploading college projects, personal experiments, and random “aha!” moments that hit at 3 AM. Basically: I break things until they work. 🧪⚙️
+
 Got an idea? Fork it, break it, fix it — let’s build cool stuff together. 🤝
 
 ---
 
-## 🌟 Featured Projects
+## 🧪 What I Contribute
 
-- [Project One](https://github.com/4ravind-b/project-one) – A fun AI snack recommender  
-- [Project Two](https://github.com/4ravind-b/project-two) – My mock CTF challenge  
-- [Project Three](https://github.com/4ravind-b/project-three) – Late-night automation scripts
+Uploading college projects, personal experiments, and random “aha!” moments that hit at 3 AM. Basically: I break things until they work. 🧪⚙️
+
+Got an idea? Fork it, break it, fix it — let’s make something chaotic but amazing together. 🤯⚙️
 
 ---
 
@@ -78,15 +75,9 @@ Got an idea? Fork it, break it, fix it — let’s build cool stuff together. �
 
 ---
 
-### 🛸 Random Fact
+### 🧑‍💻 My Current Project:
 
-I once debugged a project for 3 hours before realizing I hadn’t saved the file. A moment of silence, please. 😔💾
-
----
-
-### 🧑‍💻 My Current Project
-
-I’m brewing a super-secret AI-based security tool—stay tuned or slide into my issues to hear more! 🔮
+I’m currently working on a **super-secret AI project**. No, it’s not as mysterious as it sounds... or is it? Either way, it involves a lot of Python, some questionable decisions, and maybe even a little bit of magic. 🔮✨ Feel free to ask about it if you can handle the mystery.
 
 ---
 
