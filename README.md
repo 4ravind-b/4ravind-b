@@ -27,11 +27,10 @@ Send a carrier pigeon. Or just email me when Mercury isn’t in retrograde. 🕊
 ---
 
 ## 📚 Currently Learning
-
-- CUDA programming (because my GPU was getting bored)  
+  
 - TensorFlow/Keras stuff and pretending to understand it  
 - How to write documentation without crying  
-- How *not* to burn toast at 2 AM 🔥🍞  
+- Mastering the art of accidentally DDoS’ing your own Wi-Fi at 2 AM 🌐💥  
 - Cybersecurity fun things that make me feel like a hacker (without going to jail)
 
 ---
@@ -53,7 +52,7 @@ Got an idea? Fork it, break it, fix it — let’s build cool stuff together. �
 
 ---
 
-## 📈 GitHub Stats
+### 📈 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=tokyonight" width="49%" />
@@ -61,15 +60,15 @@ Got an idea? Fork it, break it, fix it — let’s build cool stuff together. �
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=4ravind-b&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" />
+  <img src="https://github-readme-streak-stats.demolab.com?user=4ravind-b&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" />
 </p>
 
 ---
 
-## 🐍 Contribution Snake
+### 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://github.com/4ravind-b/4ravind-b/blob/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/4ravind-b/4ravind-b/output/github-contribution-grid-snake.svg" />
 </p>
 
 ---
