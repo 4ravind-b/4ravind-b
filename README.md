@@ -25,3 +25,5 @@
   I’m adding code, programs, and simulations that I did for my courses... and some of my own projects where I get to pretend I’m a mad scientist of the tech world. 🧪⚙️
 
   Got a cool idea? Fork this repo and try it out! Learning is more fun when we do it together. 🤝
+
+![Funny GIF](https://media.giphy.com/media/3ohzdYJK1wAdPWVk88/giphy.gif)
