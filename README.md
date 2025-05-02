@@ -1,3 +1,4 @@
+<!-- Header Banner -->
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Welcome%20to%20my%20Profile!&fontSize=40)
 
 # 👋 Hey, I’m Aravind (a.k.a. “that guy who codes at 3 AM”)
@@ -52,36 +53,20 @@ Got an idea? Fork it, break it, fix it — let’s build cool stuff together. �
 
 ---
 
-### 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=tokyonight" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=tokyonight" width="49%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.demolab.com?user=4ravind-b&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" />
-</p>
-
----
-
-### 🐍 Contribution Snake
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/4ravind-b/4ravind-b/output/github-contribution-grid-snake.svg" />
-</p>
-
----
-
-## 🎮 Fun Zone
+### 🎮 Fun Zone
 
 ![Coding Meme](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
 
 ---
 
-## 🛸 Random Fact
+### 🛸 Random Fact
 
 I once debugged a project for 3 hours before realizing I hadn’t saved the file. A moment of silence, please. 😔💾
+
+---
+
+### 🧑‍💻 My Current Project:
+I'm currently building a **super-secret project** involving some cool AI and Python magic. It's top secret, but feel free to ask me about it! 🔮
 
 ---
 
