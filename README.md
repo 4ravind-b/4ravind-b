@@ -7,28 +7,40 @@
 
 ## 📝 About Me
 
-I’m a Python-and-coffee-fueled creature of the night, occasionally seen pretending to be productive while actually Googling "why is my code not working." 🐍☕  
+I’m a Python-and-coffee-fueled creature of the night, occasionally seen pretending to be productive while actually Googling "why is my code not working." 🐍☕
 
 Passionate about exploring **IoT, AI**, and **cybersecurity** — especially when it involves outsmarting things that were never smart to begin with.  
 
 Currently trying to master the art of juggling multiple projects... and failing spectacularly. (Coffee cups, phones, and dignity — all dropped at some point.) ☕📱💥
 
-### 📨 How to reach me:
-Send a carrier pigeon. Or just email me when Mercury isn’t in retrograde. 🕊️📧
-
-**Pronouns**: He/Him (but I also respond to “Dude,” “Bro,” or “HEY YOU WITH THE BUGGY CODE”) 😄
+### 📨 How to reach me  
+Send a carrier pigeon. I check email only when Mercury isn’t in retrograde. 🕊️📧  
+**Pronouns:** He/Him (but I also respond to “Dude,” “Bro,” or “HEY YOU WITH THE BUGGY CODE”) 😄
 
 ---
 
 ## 🛠️ Skills, Tools & Tech
 
-**Languages**: Python, C, Bash, Markdown (because formatting is a lifestyle)  
-**Tools**: Linux, GNU Radio, NetSim, Git, and deep Googling
+- **Languages:** Python, C, Bash, Markdown  
+- **Tools & Platforms:** Linux, NetSim, GNU Radio, Git, deep Googling
+
+---
+
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=tokyonight" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=tokyonight" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.demolab.com?user=4ravind-b&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" />
+</p>
 
 ---
 
 ## 📚 Currently Learning
-  
+
 - TensorFlow/Keras stuff and pretending to understand it  
 - How to write documentation without crying  
 - Mastering the art of accidentally DDoS’ing your own Wi-Fi at 2 AM 🌐💥  
@@ -47,9 +59,16 @@ Send a carrier pigeon. Or just email me when Mercury isn’t in retrograde. 🕊
 
 ## 🧪 What I Contribute
 
-Uploading college projects, personal experiments, and random “aha!” moments that hit at 3 AM. Basically: I break things until they work. 🧪⚙️
-
+Uploading college projects, personal experiments, and random “aha!” moments that hit at 3 AM. Basically: I break things until they work. 🧪⚙️  
 Got an idea? Fork it, break it, fix it — let’s build cool stuff together. 🤝
+
+---
+
+## 🌟 Featured Projects
+
+- [Project One](https://github.com/4ravind-b/project-one) – A fun AI snack recommender  
+- [Project Two](https://github.com/4ravind-b/project-two) – My mock CTF challenge  
+- [Project Three](https://github.com/4ravind-b/project-three) – Late-night automation scripts
 
 ---
 
@@ -65,8 +84,9 @@ I once debugged a project for 3 hours before realizing I hadn’t saved the file
 
 ---
 
-### 🧑‍💻 My Current Project:
-I'm currently building a **super-secret project** involving some cool AI and Python magic. It's top secret, but feel free to ask me about it! 🔮
+### 🧑‍💻 My Current Project
+
+I’m brewing a super-secret AI-based security tool—stay tuned or slide into my issues to hear more! 🔮
 
 ---
 
