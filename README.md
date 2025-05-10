@@ -5,90 +5,66 @@
 
 ---
 
-## 📝 About Me
+## 🧠 About Me
 
-I’m a Python-and-coffee-fueled creature of the night, occasionally seen pretending to be productive while actually Googling "why is my code not working." 🐍☕
+I’m a Python-and-coffee-fueled night coder who loves solving problems — even if it means debugging till sunrise.  
+Exploring the world of **IoT, AI, and cybersecurity**, and constantly building things that are 10% innovation and 90% trial-and-error.  
 
-Passionate about exploring **IoT, AI**, and **cybersecurity** — especially when it involves outsmarting things that were never smart to begin with.
+Currently juggling multiple projects (with some success!) and always on the lookout for fun collaborations.
 
-Currently trying to master the art of juggling multiple projects... and failing spectacularly. (Coffee cups, phones, and dignity — all dropped at some point.) ☕📱💥
-
-### 📨 How to reach me  
-Send a carrier pigeon. I only check email when my Wi-Fi signal is strong and my caffeine level is critical. 🕊️📧  
-**Pronouns:** He/Him (but I also respond to “Dude,” “Bro,” or “HEY YOU WITH THE BUGGY CODE”) 😄
+**Pronouns:** He/Him | Also responds to: “Bro,” “Dude,” or “The guy who just fixed it.”  
+**Fun Fact:** If you spot me being productive, it's probably accidental. 😄
 
 ---
 
-## 🛠️ Skills, Tools & Tech
+## 🛠️ Tech & Tools
 
-Here’s a list of my “I learned this… once” superpowers:
-
-- **Python 🐍**: Learned it in college, forgot the syntax, Googled it back into my brain.  
-- **C 💻**: Survived enough pointers to call it “expertise” (ish).  
-- **NetSim 🌐**: I can simulate networks… until a packet drops and I panic.  
-- **GNU Radio 📡**: Built flowgraphs that kind-of-sort-of work—most of the time.  
-- **Linux 🐧**: I know enough commands to feel dangerous in a terminal.  
-- **IoT 🔌**: My devices are “smart” enough to ignore me sometimes.  
+- **Languages:** Python, C, a bit of Bash and HTML/CSS  
+- **Tools:** GNU Radio, NetSim, Linux, VSCode, Git  
+- **Domains:** IoT, Embedded Systems, Cybersecurity, AI/ML  
+- **Current Focus:** TensorFlow/Keras, automation scripts, smarter Wi-Fi (still working on that last one)  
 
 ---
 
-## 📈 GitHub Stats
+## 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=tokyonight&cache_seconds=0" width="49%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=tokyonight&cache_seconds=0" width="49%" />
 </p>
 
-Here’s the **totally serious** breakdown of my coding life:
+---
 
-- ☕ **Coffee Cups Consumed:** Approximately one per bug encountered (so… a lot).  
-- 🍪 **Snack Breaks Taken:** Enough to fuel a small army of procrastinators.  
-- 🐞 **Bugs Squashed:** Countless—each with its own dramatic backstory.  
-- 🌙 **Midnight Coding Hours:** When the rest of the world sleeps, my brain powers on.  
+## 🧪 What I’m Building
 
-*(Yes, these stats are real… I think.)*
+- A “secret” AI project (equal parts code, chaos, and curiosity)  
+- IoT stuff that sometimes listens to me  
+- Scripts that make life easier — or at least funnier  
 
 ---
 
-## 📚 Currently Learning
+## 🎯 2025 Goals
 
-- TensorFlow/Keras stuff and pretending to understand it  
-- How to write documentation without crying  
-- Mastering the art of accidentally DDoS’ing your own Wi-Fi at 2 AM 🌐💥  
-- Cybersecurity fun things that make me feel like a hacker (without going to jail)
-
----
-
-## 🎯 Goals for 2025
-
-- Finally automate my snack ordering with AI  
-- Build something cool and tell everyone “it’s just a prototype”  
-- Submit at least one project before the deadline (just once… please)  
-- Touch grass (no promises)
+- Ship more, stress less  
+- Collaborate more with devs around the world  
+- Build something that gets starred more than once 😅  
+- Touch grass (maybe)
 
 ---
 
-## 🧪 What I Contribute
+## 🤝 Let’s Connect
 
-Uploading college projects, personal experiments, and random “aha!” moments that hit at 3 AM. Basically: I break things until they work. 🧪⚙️  
-Got an idea? Fork it, break it, fix it — let’s make something chaotic but amazing together. 🤯⚙️
+Got a cool idea? Ping me. Always up for brainstorming, building, or just geeking out over tech.  
+(Emails work better than carrier pigeons — but both are cool.)
 
 ---
 
-### 🎮 It’s Just How I Look Before a Deadline
+### 🎮 Me before a deadline
 
 ![Coding Meme](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
 
 ---
 
-### 🧑‍💻 My Current Project
+<!-- Typing Animation -->
+![typing](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00F8FF&center=true&vCenter=true&width=600&lines=Building%2C+breaking%2C+debugging...;Running+on+coffee+and+curiosity.;Learning+fast%2C+failing+faster.;Shipping+vibes+to+production.;Googling+%22how+to+fix+python%22...)
 
-I’m working on a **super-secret AI project**. It’s equal parts Python, questionable decisions, and maybe a dash of magic. 🔮✨  
-Feel free to ask—if you can handle the mystery.
-
----
-
-## 👋 Thanks for stopping by!
-
-<!-- 🔄 Typing Animation That Sums Me Up -->
-![typing](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00F8FF&center=true&vCenter=true&width=600&lines=Code%2C+break%2C+debug%2C+repeat...;Searching+StackOverflow+like+a+pro...;Currently+googling+%22python+why%22...;99%25+sure+it+was+working+before...;Deploying+chaos+to+production...;Coding+with+vibes+not+logic...)
