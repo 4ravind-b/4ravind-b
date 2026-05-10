@@ -40,9 +40,6 @@ focus    = sqli, xss, ssrf, idor, auth_bypass
 [tools]
 focus    = metasploit, burpsuite, zap, nmap, ffuf
 
-[open_source]
-focus    = metasploit_framework, owasp_projects
-
 [path]
 focus    = ceh → ejpt → oscp → red_team
 ```
@@ -88,17 +85,6 @@ PLATFORMS
 </td>
 </tr>
 </table>
-
----
-
-## `> ls -la ~/contributions`
-
-| Project | Type | Status |
-|---------|------|--------|
-| **rapid7/metasploit-framework** | Bug reproduction & root cause analysis | `active` |
-| **zaproxy/zaproxy** | UI resource cleanup | `merged` |
-| **OWASP/API-Security** | Documentation | `merged` |
-| **mitre/cti** | CAPEC description fixes | `merged` |
 
 ---
 
