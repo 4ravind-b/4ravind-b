@@ -8,20 +8,20 @@
 ---
 
 ## `> identify`
-\`\`\`
-┌─────────────────────────────────────────────────────────────┐
-│  ENTITY      :  4ravind-b                                   │
-│  NAME        :  Aravind                                     │
-│  ROLE        :  Offensive Security Enthusiast               │
-│  FOCUS       :  Web Exploitation  |  Red Team               │
-│  ENVIRONMENT :  Kali Linux                                  │
-│  STATUS      :  Breaking. Learning. Contributing.           │
-└─────────────────────────────────────────────────────────────┘
-\`\`\`
+
+```
+  ENTITY      :  4ravind-b
+  NAME        :  Aravind
+  ROLE        :  Offensive Security Enthusiast
+  FOCUS       :  Web Exploitation  |  Red Team
+  ENVIRONMENT :  Kali Linux
+  STATUS      :  Breaking. Learning. Contributing.
+```
 
 ---
 
 ## `> monitor /dev/activity`
+
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=4ravind-b&theme=github-compact&bg_color=000510&color=ff4444&line=ff4444&point=8a0000&area=true&hide_border=true"/>
 </p>
@@ -29,25 +29,30 @@
 ---
 
 ## `> cat focus.conf`
-\`\`\`ini
+
+```ini
 [web_exploitation]
 focus    = sqli, xss, ssrf, idor, auth_bypass
+
 [tools]
 focus    = metasploit, burpsuite, zap, nmap, ffuf
+
 [path]
-focus    = ceh → ejpt → oscp → red_team
-\`\`\`
+focus    = ceh -> ejpt -> oscp -> red_team
+```
 
 ---
 
 ## `> query tech_stack`
+
 <table>
 <tr>
 <td valign="top" width="33%">
 
-\`\`\`
+```
 LANGUAGES
-\`\`\`
+```
+
 ![Python](https://img.shields.io/badge/Python-000510?style=for-the-badge&logo=python&logoColor=ff4444)
 ![Bash](https://img.shields.io/badge/Bash-000510?style=for-the-badge&logo=gnubash&logoColor=ff4444)
 ![Ruby](https://img.shields.io/badge/Ruby-000510?style=for-the-badge&logo=ruby&logoColor=ff4444)
@@ -55,9 +60,10 @@ LANGUAGES
 </td>
 <td valign="top" width="33%">
 
-\`\`\`
+```
 TOOLS
-\`\`\`
+```
+
 ![Metasploit](https://img.shields.io/badge/Metasploit-000510?style=for-the-badge&logoColor=ff4444)
 ![BurpSuite](https://img.shields.io/badge/Burp_Suite-000510?style=for-the-badge&logo=burpsuite&logoColor=ff4444)
 ![Nmap](https://img.shields.io/badge/Nmap-000510?style=for-the-badge&logoColor=ff4444)
@@ -65,9 +71,10 @@ TOOLS
 </td>
 <td valign="top" width="33%">
 
-\`\`\`
+```
 PLATFORMS
-\`\`\`
+```
+
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-000510?style=for-the-badge&logo=tryhackme&logoColor=ff4444)
 ![HackTheBox](https://img.shields.io/badge/HackTheBox-000510?style=for-the-badge&logo=hackthebox&logoColor=ff4444)
 ![Kali](https://img.shields.io/badge/Kali_Linux-000510?style=for-the-badge&logo=kalilinux&logoColor=ff4444)
@@ -79,18 +86,20 @@ PLATFORMS
 ---
 
 ## `> stat github`
+
 <p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=4ravind-b&show_icons=true&theme=transparent&bg_color=000510&title_color=ff4444&text_color=8a3a3a&icon_color=ff4444&border_color=3a0000" width="49%"/>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=transparent&bg_color=000510&title_color=ff4444&text_color=8a3a3a&border_color=3a0000" width="49%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=transparent&bg_color=000510&title_color=ff4444&text_color=8a3a3a&icon_color=ff4444&border_color=3a0000" width="49%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=transparent&bg_color=000510&title_color=ff4444&text_color=8a3a3a&border_color=3a0000" width="49%"/>
 </p>
 
 ---
 
 ## `> cat philosophy.txt`
-\`\`\`
+
+```
 You can't defend what you don't understand how to break.
 Find the vulnerability. Understand the impact. Report responsibly.
-\`\`\`
+```
 
 ---
 
