@@ -1,0 +1,37 @@
+name: Generate Terminal Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # runs daily at midnight UTC
+  push:
+    branches: [main]
+  workflow_dispatch:       # allows manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests Pillow
+
+      - name: Generate terminal image
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python scripts/generate_terminal.py
+
+      - name: Commit and push image
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add terminal_stats.png
+          git diff --cached --quiet || git commit -m "chore: update terminal stats [skip ci]"
+          git push
