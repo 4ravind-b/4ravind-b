@@ -11,9 +11,9 @@ NEON_CYAN   = (0, 255, 255)
 NEON_GREEN  = (57, 255, 20)
 NEON_YELLOW = (255, 255, 0)
 NEON_PINK   = (255, 0, 200)
-NEON_BLUE   = (0, 149, 255)
-DIM         = (100, 40, 40)
-WHITE       = (210, 210, 210)
+NEON_BLUE   = (0, 180, 255)
+DIM         = (80, 30, 30)
+WHITE       = (200, 200, 200)
 BG          = (0, 5, 16)
 
 LANG_COLORS = [NEON_GREEN, NEON_CYAN, NEON_PINK, NEON_YELLOW, NEON_BLUE, NEON_RED]
@@ -61,106 +61,126 @@ def fetch_stats():
         "lang_pct": lang_pct,
     }
 
-def neon_text(d, pos, text, color, font):
+def glow_rect(d, x1, y1, x2, y2, color, glow_radius=4):
+    for r in range(glow_radius, 0, -1):
+        alpha = int(60 / r)
+        gc = tuple(min(255, int(c * alpha / 60)) for c in color)
+        d.rectangle([x1-r, y1-r, x2+r, y2+r], fill=gc)
+    d.rectangle([x1, y1, x2, y2], fill=color)
+
+def glow_text(d, pos, text, color, font, glow_radius=2):
     x, y = pos
-    # glow effect: draw same text slightly offset in dim color
-    for dx, dy in [(-1,0),(1,0),(0,-1),(0,1)]:
-        glow = tuple(min(255, int(c * 0.3)) for c in color)
-        d.text((x+dx, y+dy), text, fill=glow, font=font)
+    for dx in range(-glow_radius, glow_radius+1):
+        for dy in range(-glow_radius, glow_radius+1):
+            if dx == 0 and dy == 0:
+                continue
+            gc = tuple(min(255, int(c * 0.25)) for c in color)
+            d.text((x+dx, y+dy), text, fill=gc, font=font)
     d.text((x, y), text, fill=color, font=font)
 
 def render_terminal(stats):
-    W, H = 760, 500
-    PAD = 32
-    LINE = 24
-    BAR_H = 14
+    W, H = 800, 520
+    PAD = 36
 
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
 
     try:
-        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 14)
-        font_sm = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 12)
-        font_bold = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 14)
+        font      = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 15)
+        font_sm   = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 13)
+        font_bold = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 15)
+        font_lg   = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 17)
     except:
-        font = ImageFont.load_default()
-        font_sm = font
-        font_bold = font
+        font = font_sm = font_bold = font_lg = ImageFont.load_default()
 
-    # Title bar
+    # Title bar background
+    d.rectangle([0, 0, W, 38], fill=(10, 10, 20))
     for i, col in enumerate([(255,95,86),(255,189,46),(39,201,63)]):
-        d.ellipse([PAD + i*22, 16, PAD + i*22 + 12, 28], fill=col)
-    d.text((W//2 - 80, 13), "4ravind-b  —  terminal stats", fill=(130,130,130), font=font_sm)
+        cx = PAD + i * 22
+        d.ellipse([cx, 12, cx+14, 26], fill=col)
+    d.text((W//2 - 90, 11), "4ravind-b  ──  ~/terminal-stats", fill=(100,100,120), font=font_sm)
 
-    # Scanline effect
-    for sy in range(0, H, 4):
-        d.line([(0, sy), (W, sy)], fill=(0, 0, 0, 30), width=1)
+    # Subtle scanlines
+    for sy in range(38, H, 3):
+        d.line([(0, sy), (W, sy)], fill=(0, 5, 10), width=1)
 
-    y = 48
+    LINE = 26
+    y = 52
 
-    def line(text, color=WHITE, f=None):
+    def txt(text, color=WHITE, f=None, indent=0):
         nonlocal y
-        neon_text(d, (PAD, y), text, color, f or font)
+        glow_text(d, (PAD + indent, y), text, color, f or font)
         y += LINE
 
-    def blank():
+    def gap(n=1):
         nonlocal y
-        y += LINE // 2
+        y += LINE * n // 2
 
-    line("┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
-    line("└─$ gh api stats --user 4ravind-b", NEON_RED)
-    blank()
+    # Prompt
+    glow_text(d, (PAD, y), "┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
+    y += LINE
+    glow_text(d, (PAD, y), "└─$ ", NEON_RED, font_bold)
+    glow_text(d, (PAD + 40, y), "cat github_stats.conf", WHITE, font)
+    y += LINE
+    gap()
 
-    # Stats box
-    box_x = PAD + 10
-    box_w = 320
-    line("  ┌─────────────────────────────┐", DIM)
-    line("  │      GITHUB  STATS          │", NEON_RED, font_bold)
-    line("  ├─────────────────────────────┤", DIM)
-    line(f"  │  Stars         : {str(stats['stars']).ljust(11)}│", WHITE)
-    line(f"  │  Forks         : {str(stats['forks']).ljust(11)}│", WHITE)
-    line(f"  │  Followers     : {str(stats['followers']).ljust(11)}│", WHITE)
-    line(f"  │  Public Repos  : {str(stats['public_repos']).ljust(11)}│", WHITE)
-    line(f"  │  Commits (90d) : {str(stats['commits']).ljust(11)}│", NEON_GREEN)
-    line(f"  │  Pull Requests : {str(stats['prs']).ljust(11)}│", NEON_CYAN)
-    line(f"  │  Issues        : {str(stats['issues']).ljust(11)}│", NEON_YELLOW)
-    line("  └─────────────────────────────┘", DIM)
+    # ── LEFT COLUMN: stats ──────────────────────────────
+    col1_x = PAD + 10
+    col2_x = PAD + 340
+    row_y = y
 
-    blank()
-    line("  LANGUAGES BY USAGE", NEON_CYAN, font_bold)
-    blank()
+    # Stats header
+    glow_text(d, (col1_x, row_y), "[ GITHUB STATS ]", NEON_RED, font_bold)
+    ry = row_y + LINE + 4
 
-    # Language bars with neon glow
-    bar_x = PAD + 10
-    bar_max_w = W - bar_x - PAD - 80
+    stats_rows = [
+        ("Stars",        str(stats["stars"]),       NEON_YELLOW),
+        ("Forks",        str(stats["forks"]),        WHITE),
+        ("Followers",    str(stats["followers"]),    WHITE),
+        ("Repos",        str(stats["public_repos"]), WHITE),
+        ("Commits(90d)", str(stats["commits"]),      NEON_GREEN),
+        ("Pull Reqs",    str(stats["prs"]),          NEON_CYAN),
+        ("Issues",       str(stats["issues"]),       NEON_PINK),
+    ]
+
+    for label, val, color in stats_rows:
+        glow_text(d, (col1_x, ry), f"  {label.ljust(12)}: ", (120,120,140), font_sm)
+        glow_text(d, (col1_x + 190, ry), val, color, font_bold)
+        ry += LINE - 2
+
+    # ── RIGHT COLUMN: language bars ─────────────────────
+    glow_text(d, (col2_x, row_y), "[ LANGUAGES ]", NEON_CYAN, font_bold)
+    ry2 = row_y + LINE + 4
+
+    bar_max_w = W - col2_x - PAD - 10
+    BAR_H = 14
 
     for i, (lang, pct) in enumerate(stats["lang_pct"]):
         color = LANG_COLORS[i % len(LANG_COLORS)]
-        bar_w = int(bar_max_w * pct / 100)
+        bar_w = max(4, int(bar_max_w * pct / 100))
 
-        # label
-        label = f"  {lang[:12].ljust(12)}"
-        d.text((bar_x, y), label, fill=color, font=font_sm)
+        # lang name
+        glow_text(d, (col2_x, ry2), f"{lang[:10].ljust(10)}", color, font_sm)
 
-        # neon bar
-        bx = bar_x + 110
-        # glow layers
-        for gw in [6, 4, 2]:
-            glow_color = tuple(min(255, int(c * 0.2)) for c in color)
-            d.rectangle([bx, y - gw//2, bx + bar_w, y + BAR_H + gw//2], fill=glow_color)
-        d.rectangle([bx, y, bx + bar_w, y + BAR_H], fill=color)
+        # bar
+        bx = col2_x + 108
+        glow_rect(d, bx, ry2 + 1, bx + bar_w, ry2 + BAR_H, color, glow_radius=3)
 
-        # percentage
-        d.text((bx + bar_w + 8, y), f"{pct}%", fill=color, font=font_sm)
+        # pct label
+        glow_text(d, (bx + bar_w + 6, ry2), f"{pct}%", color, font_sm)
 
-        y += LINE + 4
+        ry2 += LINE + 2
 
-    blank()
-    line("┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
-    line("└─$ █", NEON_RED)
+    y = max(ry, ry2) + LINE // 2
+
+    # Bottom prompt
+    gap()
+    glow_text(d, (PAD, y), "┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
+    y += LINE
+    glow_text(d, (PAD, y), "└─$ █", NEON_RED, font_bold)
 
     img.save("terminal_stats.png")
-    print("terminal_stats.png generated")
+    print(f"Saved terminal_stats.png ({W}x{H})")
 
 if __name__ == "__main__":
     stats = fetch_stats()

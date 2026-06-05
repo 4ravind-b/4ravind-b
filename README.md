@@ -83,10 +83,6 @@ PLATFORMS
 ## `> stat github`
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=4ravind-b&theme=github_dark" width="49%"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=4ravind-b&theme=github_dark" width="49%"/>
-</p>
-<p align="center">
   <img src="https://streak-stats.demolab.com?user=4ravind-b&theme=dark&background=000510&border=3a0000&stroke=ff4444&ring=ff4444&fire=ff4444&currStreakLabel=ff4444&sideLabels=8a3a3a&dates=8a3a3a&currStreakNum=ff4444&sideNums=ff4444" width="60%"/>
 </p>
 
