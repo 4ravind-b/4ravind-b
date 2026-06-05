@@ -88,8 +88,11 @@ PLATFORMS
 ## `> stat github`
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=transparent&bg_color=000510&title_color=ff4444&text_color=8a3a3a&icon_color=ff4444&border_color=3a0000" width="49%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&theme=transparent&bg_color=000510&title_color=ff4444&text_color=8a3a3a&border_color=3a0000" width="49%"/>
+  <img src="https://streak-stats.demolab.com?user=4ravind-b&theme=dark&background=000510&border=3a0000&stroke=ff4444&ring=ff4444&fire=ff4444&currStreakLabel=ff4444&sideLabels=8a3a3a&dates=8a3a3a&currStreakNum=ff4444&sideNums=ff4444" width="60%"/>
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=4ravind-b&show_icons=true&theme=dark&bg_color=000510&title_color=ff4444&text_color=8a3a3a&icon_color=ff4444&border_color=3a0000&count_private=true" width="49%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4ravind-b&layout=compact&bg_color=000510&title_color=ff4444&text_color=8a3a3a&border_color=3a0000&count_private=true" width="49%"/>
 </p>
 
 ---
