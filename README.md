@@ -10,7 +10,7 @@
 ## `> whoami`
 
 <p align="center">
-  <img src="terminal_stats.png" alt="Terminal Stats"/>
+  <img src="terminal_stats.png" alt="Terminal Stats" width="100%"/>
 </p>
 
 ---
