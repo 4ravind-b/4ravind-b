@@ -9,6 +9,10 @@
 
 ## `> whoami`
 
+<p align="center">
+  <img src="terminal_stats.png" alt="Terminal Stats"/>
+</p>
+
 ```bash
 ┌──(4ravind-b㉿kali)-[~]
 └─$ cat /etc/profile.d/user.conf
