@@ -13,7 +13,9 @@ NEON_YELLOW = (255, 255, 0)
 NEON_PINK   = (255, 0, 200)
 NEON_BLUE   = (0, 180, 255)
 DIM         = (80, 30, 30)
+DIM2        = (40, 40, 60)
 WHITE       = (200, 200, 200)
+GRAY        = (120, 120, 140)
 BG          = (0, 5, 16)
 
 LANG_COLORS = [NEON_GREEN, NEON_CYAN, NEON_PINK, NEON_YELLOW, NEON_BLUE, NEON_RED]
@@ -63,121 +65,139 @@ def fetch_stats():
 
 def glow_rect(d, x1, y1, x2, y2, color, glow_radius=4):
     for r in range(glow_radius, 0, -1):
-        alpha = int(60 / r)
-        gc = tuple(min(255, int(c * alpha / 60)) for c in color)
+        gc = tuple(min(255, int(c * 0.15)) for c in color)
         d.rectangle([x1-r, y1-r, x2+r, y2+r], fill=gc)
     d.rectangle([x1, y1, x2, y2], fill=color)
 
-def glow_text(d, pos, text, color, font, glow_radius=2):
+def glow_text(d, pos, text, color, font, radius=2):
     x, y = pos
-    for dx in range(-glow_radius, glow_radius+1):
-        for dy in range(-glow_radius, glow_radius+1):
+    for dx in range(-radius, radius+1):
+        for dy in range(-radius, radius+1):
             if dx == 0 and dy == 0:
                 continue
-            gc = tuple(min(255, int(c * 0.25)) for c in color)
+            gc = tuple(min(255, int(c * 0.2)) for c in color)
             d.text((x+dx, y+dy), text, fill=gc, font=font)
     d.text((x, y), text, fill=color, font=font)
 
+def divider(d, y, W, PAD, color=DIM):
+    d.line([(PAD, y), (W - PAD, y)], fill=color, width=1)
+
 def render_terminal(stats):
-    W, H = 800, 520
+    W, H = 820, 600
     PAD = 36
+    LINE = 25
 
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
 
     try:
-        font      = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 15)
-        font_sm   = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 13)
-        font_bold = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 15)
-        font_lg   = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 17)
+        font      = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 14)
+        font_sm   = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 12)
+        font_bold = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 14)
     except:
-        font = font_sm = font_bold = font_lg = ImageFont.load_default()
+        font = font_sm = font_bold = ImageFont.load_default()
 
-    # Title bar background
-    d.rectangle([0, 0, W, 38], fill=(10, 10, 20))
+    # Title bar
+    d.rectangle([0, 0, W, 36], fill=(8, 8, 20))
     for i, col in enumerate([(255,95,86),(255,189,46),(39,201,63)]):
         cx = PAD + i * 22
-        d.ellipse([cx, 12, cx+14, 26], fill=col)
-    d.text((W//2 - 90, 11), "4ravind-b  ──  ~/terminal-stats", fill=(100,100,120), font=font_sm)
+        d.ellipse([cx, 11, cx+14, 25], fill=col)
+    d.text((W//2 - 95, 10), "4ravind-b  ──  ~/terminal-stats", fill=(100,100,120), font=font_sm)
 
-    # Subtle scanlines
-    for sy in range(38, H, 3):
-        d.line([(0, sy), (W, sy)], fill=(0, 5, 10), width=1)
+    # Scanlines
+    for sy in range(36, H, 3):
+        d.line([(0, sy), (W, sy)], fill=(0, 4, 12), width=1)
 
-    LINE = 26
-    y = 52
+    y = 48
 
     def txt(text, color=WHITE, f=None, indent=0):
         nonlocal y
         glow_text(d, (PAD + indent, y), text, color, f or font)
         y += LINE
 
-    def gap(n=1):
+    def gap(px=10):
         nonlocal y
-        y += LINE * n // 2
+        y += px
 
-    # Prompt
-    glow_text(d, (PAD, y), "┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
-    y += LINE
-    glow_text(d, (PAD, y), "└─$ ", NEON_RED, font_bold)
-    glow_text(d, (PAD + 40, y), "cat github_stats.conf", WHITE, font)
-    y += LINE
-    gap()
+    # ── PROMPT ──────────────────────────────────────────
+    txt("┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
+    txt("└─$ whoami --full", NEON_RED, font_bold)
+    gap(6)
 
-    # ── LEFT COLUMN: stats ──────────────────────────────
+    # ── IDENTITY SECTION ────────────────────────────────
+    divider(d, y, W, PAD, NEON_RED)
+    gap(8)
+
+    identity = [
+        ("ENTITY",      "4ravind-b",                       NEON_RED),
+        ("NAME",        "Aravind",                         WHITE),
+        ("ROLE",        "Offensive Security Enthusiast",   NEON_CYAN),
+        ("FOCUS",       "Web Exploitation  |  Red Team",   NEON_CYAN),
+        ("ENVIRONMENT", "Kali Linux",                      NEON_GREEN),
+        ("PATH",        "CEH -> eJPT -> OSCP -> Red Team", NEON_YELLOW),
+        ("STATUS",      "Breaking. Learning. Contributing.", NEON_PINK),
+    ]
+
+    for key, val, color in identity:
+        glow_text(d, (PAD + 10, y), f"  {key.ljust(11)} : ", GRAY, font_sm)
+        glow_text(d, (PAD + 160, y), val, color, font_bold)
+        y += LINE - 2
+
+    gap(8)
+    divider(d, y, W, PAD, NEON_RED)
+    gap(14)
+
+    # ── SECOND PROMPT ────────────────────────────────────
+    txt("┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
+    txt("└─$ gh stat --user 4ravind-b", NEON_RED, font_bold)
+    gap(8)
+
+    # ── TWO COLUMNS: stats + language bars ───────────────
     col1_x = PAD + 10
     col2_x = PAD + 340
     row_y = y
 
-    # Stats header
+    # Stats
     glow_text(d, (col1_x, row_y), "[ GITHUB STATS ]", NEON_RED, font_bold)
-    ry = row_y + LINE + 4
+    ry = row_y + LINE + 2
 
     stats_rows = [
-        ("Stars",        str(stats["stars"]),       NEON_YELLOW),
-        ("Forks",        str(stats["forks"]),        WHITE),
-        ("Followers",    str(stats["followers"]),    WHITE),
-        ("Repos",        str(stats["public_repos"]), WHITE),
-        ("Commits(90d)", str(stats["commits"]),      NEON_GREEN),
-        ("Pull Reqs",    str(stats["prs"]),          NEON_CYAN),
-        ("Issues",       str(stats["issues"]),       NEON_PINK),
+        ("Stars",        str(stats["stars"]),        NEON_YELLOW),
+        ("Forks",        str(stats["forks"]),         WHITE),
+        ("Followers",    str(stats["followers"]),     WHITE),
+        ("Repos",        str(stats["public_repos"]),  WHITE),
+        ("Commits(90d)", str(stats["commits"]),       NEON_GREEN),
+        ("Pull Reqs",    str(stats["prs"]),           NEON_CYAN),
+        ("Issues",       str(stats["issues"]),        NEON_PINK),
     ]
 
     for label, val, color in stats_rows:
-        glow_text(d, (col1_x, ry), f"  {label.ljust(12)}: ", (120,120,140), font_sm)
-        glow_text(d, (col1_x + 190, ry), val, color, font_bold)
+        glow_text(d, (col1_x, ry), f"  {label.ljust(12)}: ", GRAY, font_sm)
+        glow_text(d, (col1_x + 195, ry), val, color, font_bold)
         ry += LINE - 2
 
-    # ── RIGHT COLUMN: language bars ─────────────────────
+    # Language bars
     glow_text(d, (col2_x, row_y), "[ LANGUAGES ]", NEON_CYAN, font_bold)
-    ry2 = row_y + LINE + 4
-
+    ry2 = row_y + LINE + 2
     bar_max_w = W - col2_x - PAD - 10
-    BAR_H = 14
+    BAR_H = 13
 
     for i, (lang, pct) in enumerate(stats["lang_pct"]):
         color = LANG_COLORS[i % len(LANG_COLORS)]
         bar_w = max(4, int(bar_max_w * pct / 100))
-
-        # lang name
         glow_text(d, (col2_x, ry2), f"{lang[:10].ljust(10)}", color, font_sm)
-
-        # bar
         bx = col2_x + 108
-        glow_rect(d, bx, ry2 + 1, bx + bar_w, ry2 + BAR_H, color, glow_radius=3)
-
-        # pct label
+        glow_rect(d, bx, ry2 + 2, bx + bar_w, ry2 + BAR_H, color, glow_radius=3)
         glow_text(d, (bx + bar_w + 6, ry2), f"{pct}%", color, font_sm)
+        ry2 += LINE
 
-        ry2 += LINE + 2
+    y = max(ry, ry2) + 14
+    divider(d, y, W, PAD, DIM)
+    y += 12
 
-    y = max(ry, ry2) + LINE // 2
-
-    # Bottom prompt
-    gap()
-    glow_text(d, (PAD, y), "┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
-    y += LINE
-    glow_text(d, (PAD, y), "└─$ █", NEON_RED, font_bold)
+    # ── BOTTOM PROMPT ────────────────────────────────────
+    txt("┌──(4ravind-b㉿kali)-[~]", NEON_RED, font_bold)
+    txt("└─$ █", NEON_RED, font_bold)
 
     img.save("terminal_stats.png")
     print(f"Saved terminal_stats.png ({W}x{H})")
