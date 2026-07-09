@@ -93,7 +93,7 @@ def divider(d, y, W, PAD, color=DIM):
     d.line([(PAD, y), (W - PAD, y)], fill=color, width=1)
 
 def render_terminal(stats):
-    W, H = 820, 620
+    W, H = 820, 600
     PAD = 36
     LINE = 25
 
@@ -136,14 +136,13 @@ def render_terminal(stats):
     divider(d, y, W, PAD, NEON_RED)
     gap(8)
 
-    # Identity
+    # Identity (PATH row removed)
     identity = [
         ("ENTITY",      "4ravind-b",                        NEON_RED),
         ("NAME",        "Aravind",                          WHITE),
         ("ROLE",        "Offensive Security Enthusiast",    NEON_CYAN),
         ("FOCUS",       "Web Exploitation  |  Red Team",    NEON_CYAN),
         ("ENVIRONMENT", "Kali Linux",                       NEON_GREEN),
-        ("PATH",        "CEH -> eJPT -> OSCP -> Red Team",  NEON_YELLOW),
         ("STATUS",      "Breaking. Learning. Contributing.",NEON_PINK),
     ]
     for key, val, color in identity:
