@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=300&text=4ravind-b&fontSize=54&fontColor=ff4444&color=0:000005,50:0a0000,100:000005&desc=Offensive%20Security%20%E2%80%A2%20Web%20Exploitation%20%E2%80%A2%20Red%20Team&descAlignY=72&descSize=14&descAlign=50&animation=fadeIn&fontAlignY=45"/>
+ <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=4ravind-b&fontSize=54&fontColor=ff4444&color=0:000005,50:0a0000,100:000005&animation=fadeIn&fontAlignY=45"/>
 </p>
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=15&pause=1400&color=FF4444&center=true&vCenter=true&width=500&lines=Hunting+vulnerabilities+in+web+applications;Breaking+things+to+understand+how+they+work;Contributing+to+offensive+security+tools;Learning+the+art+of+exploitation"/>
@@ -20,21 +20,6 @@
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=4ravind-b&theme=github-compact&bg_color=000510&color=ff4444&line=ff4444&point=8a0000&area=true&hide_border=true"/>
 </p>
-
----
-
-## `> cat focus.conf`
-
-```ini
-[web_exploitation]
-focus    = sqli, xss, ssrf, idor, auth_bypass
-
-[tools]
-focus    = metasploit, burpsuite, zap, nmap, ffuf
-
-[path]
-focus    = ceh -> ejpt -> oscp -> red_team
-```
 
 ---
 
